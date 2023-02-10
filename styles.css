@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(45, 45, 104);
+    overflow: hidden;
+    font-size: 13px;
+}
+
+
+html body {
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+
+.image {
+    display: block;
+    margin-left: 10vh;
+    background-image: url(./mikael-stenberg.jpg);
+    background-repeat: no-repeat;
+    background-size: 40vw 100vh;
+    width: 40vw;
+    background-position: center;
+    position: relative;
+}
+
+
+.image .title {
+    position: absolute;
+    top: 10vh;
+    background-color: rgba(70, 90, 131, 0.453);
+    color: rgb(210, 210, 210);
+    font-size: 2.2rem;
+    line-height: 10vh;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+.image .credit {
+    position:absolute;
+    color: rgba(210, 210, 210, 0.697);
+    left: 7px;
+    top:98vh;
+    font-size: 0.5rem;
+    font-style: oblique;
+}
+    
+
+.user {
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin-right: 10vh;
+    background-color: rgba(218, 231, 255, 0.467);
+
+}
+
+
+.user .title {
+    position: absolute;
+    top: 10vh;
+    font-weight: 500;
+    color:rgb(23, 54, 86);
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+
+form{
+    margin-top: 136.5px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 30px 15px;
+    background-color:rgba(161, 161, 161, 0.164);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.input {
+    display: flex;
+    flex: 35%;
+    flex-direction: column;
+    padding: 15px;
+    gap:2px;
+}
+
+
+input {
+    padding: 2px;
+    border: 1px solid rgba(165, 202, 235, 0.448);
+    border-radius: 4px;
+}
+
+
+input:focus{
+    outline: none;
+    border: 1px solid rgb(158, 169, 232);
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 15px 25px, rgba(0, 0, 0, 0.04) 0px 5px 10px;
+
+}
+
+
+button {
+    color: aliceblue;
+    margin: 30px 30px;
+    padding: 8px 24px;
+    background-color: rgb(14, 14, 66);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;}
+
+
+button:hover{
+    background-color: rgb(58, 92, 169);;
+}
+
+
+.login {
+    gap: 3px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-right: auto; 
+}
