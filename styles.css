@@ -81,12 +81,12 @@ html body {
 }
 
 
-form{
-    margin-top: 136.5px;
+.userInput {
+    margin-top: 110px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding: 30px 15px;
+    padding: 30px 15px 0px 15px;
     background-color:rgba(161, 161, 161, 0.164);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -140,3 +140,25 @@ button:hover{
     margin-left: 30px;
     margin-right: auto; 
 }
+
+ul {
+    font-size: 12px;
+    list-style-position: inside;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5, opacity 2s ease-in;
+    color: rgba(255, 93, 93, 0.648);
+}
+
+#pass {
+    display: flex;
+    margin-bottom: auto;
+}
+ 
+input[type="password"]:focus + ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
